@@ -1,0 +1,23 @@
+{
+    "name" : "Cumтеcтер",
+    "version" : "1.0.0",
+    "manifest_version" : 3,
+    "description" : "Возьми cumтесты в свои руки и стань настоящим dungeon master",
+    "icons" : {
+        "64" : "/icons/billy.png",
+        "128" : "/icons/billy.png"
+    },
+
+    "content_scripts" : [
+        {
+            "matches" : ["http://contester.astanait.edu.kz/*"],
+            "run_at" : "document_idle",
+            "all_frames" : false,
+            "js" : ["script.js"]
+        }
+    ],
+
+    "host_permissions" : ["https://moodle.astanait.edu.kz/*"]
+
+
+}
